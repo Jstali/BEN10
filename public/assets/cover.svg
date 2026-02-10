@@ -1,0 +1,18 @@
+<svg width="3840" height="2160" viewBox="0 0 3840 2160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cover-base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b2a1a"/>
+      <stop offset="50%" stop-color="#4a3320"/>
+      <stop offset="100%" stop-color="#2a1b11"/>
+    </linearGradient>
+    <filter id="cover-noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="12" result="noise"/>
+      <feColorMatrix type="saturate" values="0.3"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="3840" height="2160" fill="url(#cover-base)"/>
+  <rect width="3840" height="2160" fill="rgba(0,0,0,0.18)" filter="url(#cover-noise)"/>
+  <path d="M0 180 Q480 160 960 220 T1920 220 T2880 200 T3840 180" stroke="rgba(255,255,255,0.05)" stroke-width="18" fill="none"/>
+  <path d="M0 880 Q600 920 1200 860 T2400 860 T3600 920 L3840 940" stroke="rgba(255,255,255,0.05)" stroke-width="22" fill="none"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg width="3840" height="2160" viewBox="0 0 3840 2160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paper-base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9f3e7"/>
+      <stop offset="45%" stop-color="#f1e7d7"/>
+      <stop offset="100%" stop-color="#e8dcc8"/>
+    </linearGradient>
+    <filter id="paper-noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0.2"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="3840" height="2160" fill="url(#paper-base)"/>
+  <rect width="3840" height="2160" fill="rgba(255,255,255,0.25)" filter="url(#paper-noise)"/>
+  <g opacity="0.3" stroke="#cbbca6" stroke-width="2">
+    <path d="M0 120 L3840 120"/>
+    <path d="M0 320 L3840 320"/>
+    <path d="M0 520 L3840 520"/>
+    <path d="M0 720 L3840 720"/>
+    <path d="M0 920 L3840 920"/>
+    <path d="M0 1120 L3840 1120"/>
+    <path d="M0 1320 L3840 1320"/>
+    <path d="M0 1520 L3840 1520"/>
+    <path d="M0 1720 L3840 1720"/>
+    <path d="M0 1920 L3840 1920"/>
+  </g>
+</svg>
